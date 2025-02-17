@@ -1,7 +1,8 @@
-from django_user_pinned.views import PinnedViewMixin
 from rest_framework.decorators import action
-from rest_framework.serializers import Serializer
 from rest_framework.response import Response
+from rest_framework.serializers import Serializer
+
+from django_user_pinned.views import PinnedViewMixin
 
 
 class PinAPIView(PinnedViewMixin):

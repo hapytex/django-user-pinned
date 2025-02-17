@@ -1,11 +1,10 @@
-from django.db import models
 from django.conf import settings
+from django.contrib import admin
+from django.db import models
 from django.db.models.aggregates import Count
 from django.db.models.expressions import Exists, OuterRef
 from django.db.models.query_utils import Q
-from django.contrib import admin
 from django.utils.translation import gettext as _
-
 
 STAR_CHARS = "☆★"
 
