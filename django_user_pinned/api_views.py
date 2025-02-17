@@ -6,16 +6,22 @@ from rest_framework.response import Response
 
 class PinAPIView(PinnedViewMixin):
 
-    @action(methods=['get', 'post', 'delete'], detail=True, url_path='pin', url_name='pin', serializer_class=Serializer)
+    @action(
+        methods=["get", "post", "delete"],
+        detail=True,
+        url_path="pin",
+        url_name="pin",
+        serializer_class=Serializer,
+    )
     def check_pin(self, request, *args, **kwargs):
         instance = self.get_object()
         method = request.method.casefold()
-        if method == 'get':
+        if method == "get":
             pin = instance.pinned
-        elif method == 'post':
+        elif method == "post":
             instance.pin(self.request.user)
             pin = True
         else:
             instance.unpin(self.request.user)
             pin = False
-        return Response({'pinned': pin})
+        return Response({"pinned": pin})
