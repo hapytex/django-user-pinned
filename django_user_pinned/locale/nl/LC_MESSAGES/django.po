@@ -1,0 +1,35 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2025 Willem Van Onsem
+# This file is distributed under the same license as the PACKAGE package.
+# Willem Van Onsem <yourfriends@hapytex.eu>, 2025.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-16 15:05+0100\n"
+"PO-Revision-Date: 2025-02-16 15:05+0100\n"
+"Last-Translator: Willem Van Onsem <yourfriends@hapytex.eu>\n"
+"Language-Team: NL <yourfriends@hapytex.eu>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: django_user_pinned/admin.py:21
+msgid "Pin items"
+msgstr "Markeer als favoriet"
+
+#: django_user_pinned/admin.py:31
+msgid "Unpin items"
+msgstr "Verwijder als favoriet"
+
+#: django_user_pinned/models.py:68
+msgid "a user can add an object to their selection"
+msgstr "Een gebruiker kan objecten aan zijn/haar selectie toevoegen"
+
+#: django_user_pinned/models.py:69
+msgid "a user can remove an object from their selection"
+msgstr "Een gebruiker kan objecten van zijn/haar selectie verwijderen"
