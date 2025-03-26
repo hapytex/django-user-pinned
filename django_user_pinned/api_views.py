@@ -5,7 +5,7 @@ from rest_framework.serializers import Serializer
 from django_user_pinned.views import PinnedViewMixin
 
 
-class PinAPIView(PinnedViewMixin):
+class PinAPIViewMixin(PinnedViewMixin):
 
     @action(
         methods=["get", "post", "delete"],
